@@ -1,0 +1,22 @@
+version: '3'
+services:
+    logspout-to-telegram:
+        container_name: logspout-to-telegram
+        restart: always
+        image: logspout-to-telegram
+        build: .
+        networks: 
+            - logspout-network
+    logspout:
+        container_name: logspout
+        restart: always
+        image: gliderlabs/logspout
+        volumes: 
+            - /var/run/docker.sock:/var/run/docker.sock
+        networks: 
+            - logspout-network
+        depends_on: 
+            - logspout-to-telegram
+networks: 
+    logspout-network:
+        driver: bridge
