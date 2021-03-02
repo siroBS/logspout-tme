@@ -1,6 +1,6 @@
 # logspout-tme
 
-logspout-tme is a snippet for building couple containers to translate the logs from docker.sock from host to telegram via Telegram MTProto protocol
+logspout-tme is a snippet for building couple containers to translate the logs from docker.sock from host to Telegram via Telegram MTProto protocol
 
 ### Installation
 
