@@ -52,7 +52,7 @@ client = TelegramClient(None, API_ID, API_HASH,
 
 
 async def message(text):
-    print(text)
+    # print(text)
     await asyncio.sleep(0)
     try: await client.send_message(ADMIN_ID, text)
     except: pass
