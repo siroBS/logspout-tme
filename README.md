@@ -31,7 +31,7 @@ $ git clone https://github.com/siroBS/logspout-tme.git
     ADMIN_ID
     ```
 
-3. Get up your logger
+3. Start up your logger
 
     _cd logspout-tme/_
 ```sh
